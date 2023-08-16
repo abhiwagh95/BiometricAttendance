@@ -12,6 +12,18 @@
         android:theme="@style/Theme.BiometricAttendance"
         tools:targetApi="31">
         <activity
+            android:name=".DownloadEntriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewEntriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnterNewEntryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

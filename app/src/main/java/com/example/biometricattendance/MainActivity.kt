@@ -1,5 +1,6 @@
 package com.example.biometricattendance
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -48,6 +49,8 @@ class MainActivity : AppCompatActivity() {
         if (enteredUsername == "test123" && enteredPassword == "12345") {
             // Perform admin-specific actions here
             Toast.makeText(this, "Admin login successful!", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, AdminDashboardActivity::class.java)
+            startActivity(intent)
         } else {
             Toast.makeText(this, "Invalid credentials", Toast.LENGTH_SHORT).show()
         }
